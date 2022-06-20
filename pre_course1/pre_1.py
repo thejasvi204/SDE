@@ -16,7 +16,10 @@ class myStack:
         self.arr.append(item)
     def pop(self):
         if self.isEmpty() == 0:
-            self.arr.pop()
+            #self.arr.pop()
+            pop= self.arr[-1]
+            self.arr.remove(pop)
+            return pop
         else:
             print("stack is empty")
     def peek(self):
@@ -30,6 +33,8 @@ s = myStack()
 s.push('1')
 s.push('2')
 s.push('3')
+print(s.pop())
+print(s.pop())
 print(s.pop())
 print(s.pop())
 print(s.show())
