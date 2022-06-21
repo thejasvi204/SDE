@@ -18,7 +18,8 @@ class myStack:
         if self.isEmpty() == 0:
             #self.arr.pop()
             pop= self.arr[-1]
-            self.arr.remove(pop)
+            #self.arr.remove(pop)
+            self.arr=self.arr[:len(self.arr)-1]
             return pop
         else:
             print("stack is empty")
@@ -33,8 +34,6 @@ s = myStack()
 s.push('1')
 s.push('2')
 s.push('3')
-print(s.pop())
-print(s.pop())
 print(s.pop())
 print(s.pop())
 print(s.show())
