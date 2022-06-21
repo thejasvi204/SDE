@@ -19,7 +19,8 @@ class myStack:
             #self.arr.pop()
             pop= self.arr[-1]
             #self.arr.remove(pop)
-            self.arr=self.arr[:len(self.arr)-1]
+            del self.arr[-1]
+            #self.arr=self.arr[:len(self.arr)-1]
             return pop
         else:
             print("stack is empty")
